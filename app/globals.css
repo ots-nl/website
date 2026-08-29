@@ -1,26 +1,48 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Colour tokens — from OTS Brand Bible v2 §4.1 */
+
+  /* Backgrounds */
+  --color-cream: #FAF6EE;
+  --color-cream-deep: #F2EBDA;
+  --color-night: #0E0B08;
+  --color-night-soft: #1A1612;
+
+  /* Text */
+  --color-ink: #141210;
+  --color-ink-soft: #2C2822;
+  --color-muted: #8A7F6E;
+
+  /* Accent — the single accent colour of the brand */
+  --color-accent: #E85A1C;
+  --color-accent-deep: #B8420E;
+  --color-accent-tint: #FBE6D8;
+
+  /* Rare tertiary — the mist sage */
+  --color-mist: #DDE6DA;
+
+  /* Rule — for borders and dividers */
+  --color-rule: rgb(20 18 16 / 0.14);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Focus outlines use the accent colour */
+  *:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
 }
