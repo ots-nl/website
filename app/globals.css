@@ -24,12 +24,19 @@
 
   /* Rule — for borders and dividers */
   --color-rule: rgb(20 18 16 / 0.14);
+
+  /* Border radius — from Brand Bible v2 §4.4 */
+  --radius-chip: 4px;
+  --radius-card: 20px;
+  --radius-card-sm: 16px;
+  --radius-pill: 999px;
 }
 
 @layer base {
   html {
     background-color: var(--color-cream);
     color: var(--color-ink);
+    scroll-behavior: smooth;
   }
 
   body {
@@ -44,5 +51,69 @@
   *:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 4px;
+  }
+
+  /* Selected text uses the accent — a small brand signature */
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-cream);
+  }
+
+  /* Respect user motion preferences — from Brand Bible v2 §4.7 */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Standard OTS container — 1280px max, responsive padding.
+     From Brand Bible v2 §4.3.
+     Usage: <div class="container-ots">...</div> */
+  .container-ots {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @media (min-width: 768px) {
+    .container-ots {
+      padding-left: 48px;
+      padding-right: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-ots {
+      padding-left: 96px;
+      padding-right: 96px;
+    }
+  }
+
+  /* Standard OTS section — vertical rhythm.
+     From Brand Bible v2 §4.3: 128px desktop, 80px mobile.
+     Usage: <section class="section-ots">...</section> */
+  .section-ots {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 1024px) {
+    .section-ots {
+      padding-top: 128px;
+      padding-bottom: 128px;
+    }
   }
 }
