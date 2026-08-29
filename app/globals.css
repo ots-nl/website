@@ -30,6 +30,11 @@
   --radius-card: 20px;
   --radius-card-sm: 16px;
   --radius-pill: 999px;
+
+  /* Type — from Brand Bible v2 §4.2 */
+  --font-display: var(--font-anton), Impact, "Helvetica Neue", sans-serif;
+  --font-italic: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
 @layer base {
@@ -40,6 +45,7 @@
   }
 
   body {
+    font-family: var(--font-body);
     background-color: var(--color-cream);
     color: var(--color-ink);
     -webkit-font-smoothing: antialiased;

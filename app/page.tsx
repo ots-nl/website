@@ -3,42 +3,45 @@ export default function Home() {
     <main>
       <section className="section-ots">
         <div className="container-ots text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent mb-6">
-            Step 2b — Design tokens & layout primitives
+          <p className="text-xs font-semibold uppercase tracking-[0.14em] text-accent mb-8">
+            Step 3a — Typography
           </p>
-          <h1 className="text-4xl font-bold text-ink mb-4 leading-tight">
-            Ontwikkeling Tech Services
+
+          <h1 className="font-display text-[clamp(48px,7vw,112px)] text-ink leading-[0.92] tracking-[-0.02em] mb-10 max-w-4xl mx-auto">
+            Behind every smooth business is a{" "}
+            <span className="font-italic italic text-accent">better</span>{" "}
+            system.
           </h1>
-          <p className="text-base text-ink-soft mb-10 leading-relaxed max-w-xl mx-auto">
-            The visual foundation now includes a 1280px container with responsive
-            padding, a section with generous vertical rhythm, and border radius
-            tokens for chips, cards, and pills.
+
+          <p className="text-lg text-ink-soft leading-relaxed max-w-2xl mx-auto mb-12">
+            The typography now carries the voice of the brand. Anton for
+            display headlines, Cormorant Garamond italic for the single accent
+            word, Inter for everything else you&apos;re reading right now.
           </p>
 
           <div className="flex gap-2 justify-center flex-wrap mb-10">
             <span className="px-3 py-1 rounded-chip text-xs bg-cream-deep text-ink">
-              rounded-chip · cream-deep
+              cream-deep
             </span>
             <span className="px-3 py-1 rounded-chip text-xs bg-accent text-cream">
-              rounded-chip · accent
+              accent
             </span>
             <span className="px-3 py-1 rounded-chip text-xs bg-night text-cream">
-              rounded-chip · night
+              night
             </span>
             <span className="px-3 py-1 rounded-chip text-xs bg-mist text-ink">
-              rounded-chip · mist
+              mist
             </span>
           </div>
 
           <div className="inline-block bg-cream-deep rounded-card p-8 mb-10 max-w-md">
             <p className="text-sm text-ink-soft leading-relaxed">
-              This card uses <code className="text-accent">rounded-card</code>{" "}
-              (20px). The container respects 96px side padding on desktop,
-              48px on tablet, 24px on mobile.
+              Card body in Inter. Container respects 96px side padding on
+              desktop, 48px on tablet, 24px on mobile.
             </p>
           </div>
 
-          <div className="mb-10">
+          <div className="mb-12">
             <button className="rounded-pill bg-accent text-cream px-7 py-3.5 text-sm font-medium hover:bg-accent-deep transition-colors">
               Pill button — hover me
             </button>
