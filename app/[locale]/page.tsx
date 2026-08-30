@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { Link } from '../../i18n/navigation';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
+import { Button } from '@/components/ui/Button';
 
 export default async function Home({
   params,
@@ -12,26 +12,22 @@ export default async function Home({
   setRequestLocale(locale);
 
   const t = await getTranslations('home');
-  const otherLocale = locale === 'nl' ? 'en' : 'nl';
+  const otherLocale: 'nl' | 'en' = locale === 'nl' ? 'en' : 'nl';
   const otherLocaleLabel = locale === 'nl' ? 'English' : 'Nederlands';
 
   return (
     <main>
-      {/* Hero — default cream background */}
+      {/* Hero — cream */}
       <Section>
         <Container className="text-center">
-          {/* Language toggle */}
+          {/* Language toggle — ghost variant */}
           <div className="mb-16 flex items-center justify-center gap-4 flex-wrap">
             <span className="type-caption text-muted">
               {t('current_language_label')}: {t('language_name')}
             </span>
-            <Link
-              href="/"
-              locale={otherLocale}
-              className="type-button rounded-pill bg-ink text-cream px-5 py-2 hover:bg-accent transition-colors"
-            >
-              {t('switch_to')} {otherLocaleLabel} →
-            </Link>
+            <Button variant="ghost" href="/" locale={otherLocale}>
+              {t('switch_to')} {otherLocaleLabel}
+            </Button>
           </div>
 
           <p className="type-label text-accent mb-8">{t('eyebrow')}</p>
@@ -42,46 +38,79 @@ export default async function Home({
             {t('tagline_part2')}
           </h1>
 
-          <p className="type-body-lg text-ink-soft max-w-2xl mx-auto">
+          <p className="type-body-lg text-ink-soft max-w-2xl mx-auto mb-12">
             {t('subhead')}
           </p>
+
+          {/* Real CTAs — will link to /contact once we build that page */}
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <Button variant="primary">Request an Audit</Button>
+            <Button variant="secondary">Book a Discovery call</Button>
+          </div>
         </Container>
       </Section>
 
-      {/* Demo — cream-deep background */}
+      {/* Button variants showcase — cream-deep */}
       <Section background="cream-deep">
         <Container>
-          <p className="type-label text-accent mb-6">Section — cream-deep</p>
-          <p className="type-body-lg max-w-2xl">
-            This section uses <code className="type-body-sm">background=&quot;cream-deep&quot;</code>.
-            The Section component automatically applies both the background colour
-            and the correct default text colour. Alternating cream tones create
-            rhythm between sections without loud contrast.
+          <p className="type-label text-accent mb-6">
+            Step 5b — Button variants
+          </p>
+          <h2 className="type-h2 mb-10 max-w-3xl">
+            Four buttons.{' '}
+            <span className="type-accent-word">One</span> component.
+          </h2>
+
+          <div className="space-y-10">
+            <div className="flex items-center gap-8 flex-wrap">
+              <p className="type-label text-muted min-w-32">Primary</p>
+              <Button variant="primary">Request an Audit</Button>
+            </div>
+
+            <div className="flex items-center gap-8 flex-wrap">
+              <p className="type-label text-muted min-w-32">Secondary</p>
+              <Button variant="secondary">Book a Discovery call</Button>
+            </div>
+
+            <div className="flex items-center gap-8 flex-wrap">
+              <p className="type-label text-muted min-w-32">Ghost</p>
+              <Button variant="ghost">Read more</Button>
+            </div>
+
+            <div className="flex items-center gap-8 flex-wrap">
+              <p className="type-label text-muted min-w-32">Nav</p>
+              <Button variant="nav">Request an Audit</Button>
+            </div>
+          </div>
+
+          <p className="type-body-sm text-muted mt-12 max-w-xl">
+            Hover each button to see the transitions: primary shifts to
+            accent-deep and lifts by 1px, secondary lifts, ghost draws an
+            underline from left to right, nav shifts colour.
           </p>
         </Container>
       </Section>
 
-      {/* Demo — night background */}
+      {/* Buttons on dark — night */}
       <Section background="night">
         <Container>
-          <p className="type-label text-accent mb-6">Section — night</p>
-          <p className="type-body-lg max-w-2xl">
-            This section uses <code className="type-body-sm">background=&quot;night&quot;</code>.
-            Text automatically flips to cream. Per Brand Bible §4.1: reserved for
-            high-contrast moments — no more than 2-3 night sections per page.
-            Used for &quot;How We Work&quot;, the Service Ladder, and the Final CTA.
+          <p className="type-label text-accent mb-6">
+            Buttons on night background
           </p>
-        </Container>
-      </Section>
+          <h2 className="type-h2 mb-10 max-w-3xl">
+            The same component adapts.
+          </h2>
 
-      {/* Demo — mist background */}
-      <Section background="mist">
-        <Container>
-          <p className="type-label text-accent mb-6">Section — mist</p>
-          <p className="type-body-lg max-w-2xl">
-            This section uses <code className="type-body-sm">background=&quot;mist&quot;</code>.
-            Per Brand Bible §4.1: the mist sage appears once per page maximum.
-            Currently reserved for the Contact page — this demo is temporary.
+          <div className="flex items-center gap-4 flex-wrap">
+            <Button variant="primary">Request an Audit</Button>
+            <Button variant="secondary">Book a Discovery call</Button>
+            <Button variant="ghost">Read more</Button>
+          </div>
+
+          <p className="type-body-sm text-muted mt-12 max-w-xl">
+            The secondary and ghost variants use border-current and text-current
+            respectively — so on night sections they inherit cream automatically.
+            No conditional colour logic required.
           </p>
         </Container>
       </Section>
