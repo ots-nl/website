@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "title": "OTS — Business Operating Systems for Dutch service businesses",
+    "description": "We build Business Operating Systems for restaurants, clinics, and professional services firms in the Netherlands. Less manual work. Better data. Systems that do their work quietly."
+  },
+  "home": {
+    "eyebrow": "Step 4a — Internationalisation",
+    "tagline_part1": "Behind every smooth business is a",
+    "tagline_accent": "better",
+    "tagline_part2": "system.",
+    "subhead": "This page is now in English. Click the button above to switch to Dutch — the URL will change to / and the text will re-render.",
+    "current_language_label": "Current language",
+    "language_name": "English",
+    "switch_to": "Switch to"
+  }
+}
