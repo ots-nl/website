@@ -12,5 +12,15 @@
     "current_language_label": "Huidige taal",
     "language_name": "Nederlands",
     "switch_to": "Wissel naar"
+  },
+  "nav": {
+    "logo": "ontwikkeling.",
+    "logoMobile": "OTS",
+    "linkDiensten": "Diensten",
+    "linkEssays": "Essays",
+    "linkOverOns": "Over ons",
+    "cta": "Vraag een Audit aan",
+    "openMenu": "Open menu",
+    "closeMenu": "Sluit menu"
   }
 }

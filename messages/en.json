@@ -12,5 +12,15 @@
     "current_language_label": "Current language",
     "language_name": "English",
     "switch_to": "Switch to"
+  },
+  "nav": {
+    "logo": "ontwikkeling.",
+    "logoMobile": "OTS",
+    "linkDiensten": "Services",
+    "linkEssays": "Essays",
+    "linkOverOns": "About",
+    "cta": "Request an Audit",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   }
 }
