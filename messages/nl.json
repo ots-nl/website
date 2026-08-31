@@ -1,4 +1,7 @@
 {
+  "_notes": {
+    "hero": "DRAFT — direct rendering of the North Star sentence, pending Deepak's review before this is considered final Dutch copy."
+  },
   "meta": {
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
     "description": "Wij bouwen Business Operating Systems voor restaurants, klinieken en professionele dienstverleners in Nederland. Minder handwerk. Betere data. Systemen die stil hun werk doen."
@@ -22,5 +25,16 @@
     "cta": "Vraag een Audit aan",
     "openMenu": "Open menu",
     "closeMenu": "Sluit menu"
+  },
+  "hero": {
+    "eyebrow": "Voor Nederlandse dienstverleners",
+    "headlineLine1": "Achter elk soepel bedrijf",
+    "headlineLine2Pre": "zit een ",
+    "headlineLine2Accent": "beter",
+    "headlineLine2Post": " systeem.",
+    "subheadline": "We bouwen Business Operating Systems voor restaurants, klinieken en professionele dienstverleners in Nederland. Minder handwerk. Betere data. Systemen die stil hun werk doen.",
+    "ctaPrimary": "Vraag een Audit aan",
+    "ctaSecondary": "Boek een gesprek van 45 minuten",
+    "footnote": "Audit — €2.500 vaste prijs. Twee weken."
   }
 }

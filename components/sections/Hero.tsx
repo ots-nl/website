@@ -1,6 +1,9 @@
+import { getTranslations } from 'next-intl/server';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
 import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
+import { Eyebrow } from '@/components/ui/Eyebrow';
+import { Button } from '@/components/ui/Button';
 
 /**
  * Placeholder treatment shared by every block in this skeleton.
@@ -12,10 +15,12 @@ const placeholder =
 /**
  * Hero — the full-viewport-height opening section.
  *
- * Structural skeleton only (Step 7a): the asymmetric two-column grid and
- * placeholder blocks that Step 7b (copy) and Step 7c (photograph) fill in.
+ * Structural skeleton from Step 7a; Step 7b fills in the left-column copy
+ * and CTAs. The photograph placeholder (Step 7c) is untouched.
  */
-export function Hero() {
+export async function Hero() {
+  const t = await getTranslations('hero');
+
   return (
     <Section
       background="cream"
@@ -25,21 +30,32 @@ export function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-6 lg:gap-6 items-center min-h-[inherit]">
           {/* Left column — copy stack */}
           <div className="flex flex-col gap-4">
-            <div className={`${placeholder} rounded-chip h-9 w-40`}>
-              Eyebrow — Step 7b
+            <Eyebrow>{t('eyebrow')}</Eyebrow>
+
+            <h1 className="type-hero text-ink">
+              {t('headlineLine1')}
+              <br />
+              {t('headlineLine2Pre')}
+              <span className="type-accent-word">
+                {t('headlineLine2Accent')}
+              </span>
+              {t('headlineLine2Post')}
+            </h1>
+
+            <p className="type-body-lg text-ink-soft max-w-[520px]">
+              {t('subheadline')}
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button variant="primary" href="/#audit">
+                {t('ctaPrimary')}
+              </Button>
+              <Button variant="secondary" href="/#contact">
+                {t('ctaSecondary')}
+              </Button>
             </div>
-            <div className={`${placeholder} rounded-card-sm h-48`}>
-              Headline (2 lines) — Step 7b
-            </div>
-            <div className={`${placeholder} rounded-card-sm h-24`}>
-              Subheadline — Step 7b
-            </div>
-            <div className={`${placeholder} rounded-chip h-14`}>
-              CTA buttons — Step 7b
-            </div>
-            <div className={`${placeholder} rounded-chip h-8 w-56`}>
-              Foot note — Step 7b
-            </div>
+
+            <p className="type-caption text-muted">{t('footnote')}</p>
           </div>
 
           {/* Right column — photograph */}

@@ -22,5 +22,16 @@
     "cta": "Request an Audit",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "For Dutch service businesses",
+    "headlineLine1": "Behind every smooth business",
+    "headlineLine2Pre": "is a ",
+    "headlineLine2Accent": "better",
+    "headlineLine2Post": " system.",
+    "subheadline": "We build Business Operating Systems for restaurants, clinics, and professional services firms in the Netherlands. Less manual work. Better data. Systems that do their work quietly.",
+    "ctaPrimary": "Request an Audit",
+    "ctaSecondary": "Book a 45-min call",
+    "footnote": "Audit — €2,500 fixed. Two weeks."
   }
 }
