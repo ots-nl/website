@@ -4,6 +4,7 @@ import { Container } from '@/components/layout/Container';
 import { Button } from '@/components/ui/Button';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { AsteriskBreak } from '@/components/ui/AsteriskBreak';
+import { ScrollIndicator } from '@/components/ui/ScrollIndicator';
 
 export default async function Home({
   params,
@@ -20,7 +21,7 @@ export default async function Home({
   return (
     <main>
       {/* Hero — cream */}
-      <Section>
+      <Section className="relative">
         <Container className="text-center">
           {/* Language toggle */}
           <div className="mb-16 flex items-center justify-center gap-4 flex-wrap">
@@ -49,6 +50,8 @@ export default async function Home({
             <Button variant="secondary">Book a Discovery call</Button>
           </div>
         </Container>
+
+        <ScrollIndicator />
       </Section>
 
       {/* OTS section signature — sits between sections as a visual pause */}
