@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
@@ -6,17 +7,10 @@ import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Button } from '@/components/ui/Button';
 
 /**
- * Placeholder treatment shared by every block in this skeleton.
- * Replaced with real content in Step 7b (copy/CTAs) and Step 7c (photograph).
- */
-const placeholder =
-  'bg-cream-deep border border-dashed border-rule flex items-center justify-center text-center text-muted text-[12px] leading-snug px-3';
-
-/**
  * Hero — the full-viewport-height opening section.
  *
  * Structural skeleton from Step 7a; Step 7b fills in the left-column copy
- * and CTAs. The photograph placeholder (Step 7c) is untouched.
+ * and CTAs; Step 7c fills in the right-column photograph.
  */
 export async function Hero() {
   const t = await getTranslations('hero');
@@ -30,7 +24,7 @@ export async function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] gap-6 lg:gap-6 items-center min-h-[inherit]">
           {/* Left column — copy stack */}
           <div className="flex flex-col gap-4">
-            <Eyebrow>{t('eyebrow')}</Eyebrow>
+            <Eyebrow variant="pill">{t('eyebrow')}</Eyebrow>
 
             <h1 className="type-hero text-ink">
               {t('headlineLine1')}
@@ -59,10 +53,17 @@ export async function Hero() {
           </div>
 
           {/* Right column — photograph */}
-          <div
-            className={`${placeholder} rounded-card min-h-[280px] lg:min-h-[560px]`}
-          >
-            Photograph — Step 7c
+          <div className="relative min-h-[280px] lg:min-h-[560px]">
+            <div className="absolute inset-0 lg:right-[-48px] overflow-hidden rounded-card">
+              <Image
+                src="/images/hero-restaurant-interior.jpg"
+                alt={t('photoAlt')}
+                fill
+                priority
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-cover [filter:sepia(0.12)_saturate(1.15)]"
+              />
+            </div>
           </div>
         </div>
       </Container>

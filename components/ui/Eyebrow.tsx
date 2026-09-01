@@ -1,10 +1,12 @@
 import { ReactNode, HTMLAttributes } from 'react';
 
 type EyebrowColor = 'accent' | 'muted';
+type EyebrowVariant = 'plain' | 'pill';
 
 interface EyebrowProps extends HTMLAttributes<HTMLParagraphElement> {
   children: ReactNode;
   color?: EyebrowColor;
+  variant?: EyebrowVariant;
 }
 
 const colorClasses: Record<EyebrowColor, string> = {
@@ -20,17 +22,28 @@ const colorClasses: Record<EyebrowColor, string> = {
  * "section eyebrow" pattern. Use color="muted" for design-system reference
  * labels (e.g., labels-on-labels in a type showcase).
  *
+ * variant="pill" is reserved for the Hero eyebrow only (PRD §4.2 exception —
+ * every other section eyebrow stays plain text per §4.2, §4.4, §4.5).
+ *
  * Usage:
  *   <Eyebrow>Step 5c — Small utilities</Eyebrow>
  *   <Eyebrow color="muted" className="mb-4">type-hero</Eyebrow>
+ *   <Eyebrow variant="pill">For Dutch service businesses</Eyebrow>
  */
 export function Eyebrow({
   children,
   color = 'accent',
+  variant = 'plain',
   className = '',
   ...rest
 }: EyebrowProps) {
-  const classes = ['type-label', colorClasses[color], className]
+  const classes = [
+    'type-label',
+    variant === 'pill'
+      ? 'inline-block w-fit bg-accent-tint text-accent-deep rounded-full px-3 py-1'
+      : colorClasses[color],
+    className,
+  ]
     .filter(Boolean)
     .join(' ');
 
