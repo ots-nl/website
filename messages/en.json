@@ -48,5 +48,42 @@
     "block3Numeral": "03",
     "block3Title": "Reminders go out by hand.",
     "block3Body": "The receptionist sends the confirmations. The practice assistant calls the no-shows. The waiter texts tonight's table to ask if they're still coming. Work a system should do, happening in people's heads."
+  },
+  "whatWeDo": {
+    "header": {
+      "eyebrow": "// What we do",
+      "h2Part1": "Three services.",
+      "h2Part2": "One progression.",
+      "subhead": "Every OTS engagement starts with an Audit, evolves into a Build, and matures into a Retainer. You climb the ladder as it makes sense for your business — not before."
+    },
+    "cards": {
+      "audit": {
+        "eyebrow": "01 · Audit",
+        "title": "The diagnosis.",
+        "body": "Two weeks. We map how your business actually works today — the workflows, the tools, the manual work. We deliver a written report with a systems roadmap. Even if you take nothing else from us afterwards, you're further along than where you started.",
+        "price": "€2,500",
+        "meta": "fixed price · two weeks",
+        "linkText": "More about Audit →",
+        "href": "/#audit"
+      },
+      "build": {
+        "eyebrow": "02 · Build",
+        "title": "The system.",
+        "body": "Fixed price. Fixed scope. Four to twelve weeks. We build a working Business Operating System for one specific function in your business — reservations, patient intake, quote-to-invoice — including documentation and training.",
+        "price": "€8,000 – €22,000+",
+        "meta": "fixed price · fixed scope · 4–12 weeks",
+        "linkText": "More about Build →",
+        "href": "/#build"
+      },
+      "retainer": {
+        "eyebrow": "03 · Retainer",
+        "title": "The partner.",
+        "body": "Monthly. We maintain and extend the systems we've built for you. Small improvements, monitoring, quarterly reviews, priority work. The long term.",
+        "price": "€1,500 – €5,000+ / month",
+        "meta": "monthly · ongoing relationship",
+        "linkText": "More about Retainer →",
+        "href": "/#retainer"
+      }
+    }
   }
 }

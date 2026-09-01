@@ -1,7 +1,8 @@
 {
   "_notes": {
     "hero": "DRAFT — direct rendering of the North Star sentence, pending Deepak's review before this is considered final Dutch copy.",
-    "problem": "DRAFT — h2Part1 and h2Part2 pending Deepak's review before this is considered final Dutch copy."
+    "problem": "DRAFT — h2Part1 and h2Part2 pending Deepak's review before this is considered final Dutch copy.",
+    "whatWeDo": "DRAFT — header.subhead pending Deepak's review before this is considered final Dutch copy."
   },
   "meta": {
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
@@ -52,5 +53,42 @@
     "block3Numeral": "03",
     "block3Title": "De herinneringen worden met de hand verstuurd.",
     "block3Body": "De receptioniste stuurt de bevestigingen. De praktijkassistent belt de no-shows na. De ober appt de tafel van vanavond of ze nog komen. Werk dat een systeem zou moeten doen, gebeurt in mensenhoofden."
+  },
+  "whatWeDo": {
+    "header": {
+      "eyebrow": "// Onze diensten",
+      "h2Part1": "Drie diensten.",
+      "h2Part2": "Eén weg.",
+      "subhead": "Elke OTS-samenwerking begint bij een Audit, groeit naar een Build, en wordt uiteindelijk een Retainer. Je klimt de ladder wanneer het voor jouw bedrijf zin heeft — niet eerder."
+    },
+    "cards": {
+      "audit": {
+        "eyebrow": "01 · Audit",
+        "title": "De diagnose.",
+        "body": "Twee weken. We brengen in kaart hoe je bedrijf nu werkt — de workflows, de tools, het handwerk. We leveren een geschreven rapport met een systeemroadmap. Ook als je daarna niks bij ons afneemt, ben je verder dan waar je begon.",
+        "price": "€2.500",
+        "meta": "vaste prijs · twee weken",
+        "linkText": "Meer over Audit →",
+        "href": "/#audit"
+      },
+      "build": {
+        "eyebrow": "02 · Build",
+        "title": "Het systeem.",
+        "body": "Vaste prijs. Vaste scope. Vier tot twaalf weken. We bouwen een werkend Business Operating System voor één specifieke functie in je bedrijf — reserveringen, patiëntenintake, offerte-tot-factuur — inclusief documentatie en training.",
+        "price": "€8.000 – €22.000+",
+        "meta": "vaste prijs · vaste scope · 4–12 weken",
+        "linkText": "Meer over Build →",
+        "href": "/#build"
+      },
+      "retainer": {
+        "eyebrow": "03 · Retainer",
+        "title": "De partner.",
+        "body": "Maandelijks. We onderhouden en ontwikkelen de systemen die we voor je hebben gebouwd. Kleine verbeteringen, monitoring, kwartaalreviews, prioriteitswerk. De lange termijn.",
+        "price": "€1.500 – €5.000+ / maand",
+        "meta": "maandelijks · doorlopende relatie",
+        "linkText": "Meer over Retainer →",
+        "href": "/#retainer"
+      }
+    }
   }
 }

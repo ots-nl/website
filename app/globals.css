@@ -157,6 +157,13 @@
     letter-spacing: -0.03em;
   }
 
+  .type-price {
+    font-family: var(--font-display);
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+
   /* Interface type — Inter */
   .type-h4 {
     font-family: var(--font-body);
