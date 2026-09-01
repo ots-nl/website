@@ -1,6 +1,7 @@
 {
   "_notes": {
-    "hero": "DRAFT — direct rendering of the North Star sentence, pending Deepak's review before this is considered final Dutch copy."
+    "hero": "DRAFT — direct rendering of the North Star sentence, pending Deepak's review before this is considered final Dutch copy.",
+    "problem": "DRAFT — h2Part1 and h2Part2 pending Deepak's review before this is considered final Dutch copy."
   },
   "meta": {
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
@@ -37,5 +38,19 @@
     "ctaSecondary": "Boek een gesprek van 45 minuten",
     "footnote": "Audit — €2.500 vaste prijs. Twee weken.",
     "photoAlt": "Gasten dineren in een warm verlicht restaurantinterieur"
+  },
+  "problem": {
+    "eyebrow": "// Het probleem",
+    "h2Part1": "De meeste dienstverleners draaien op geheugen, WhatsApp en",
+    "h2Part2": "moeite.",
+    "block1Numeral": "01",
+    "block1Title": "De reserveringen komen binnen via zes verschillende kanalen.",
+    "block1Body": "Telefoon, Instagram DM, e-mail, de website, walk-ins, en die ene reserveringsplatform die je 3% commissie kost. Iemand — meestal jij — houdt ze bij in een schrift naast de kassa. Elke gemiste boeking is een gemiste avond.",
+    "block2Numeral": "02",
+    "block2Title": "Je klantgegevens leven op iemand anders' server.",
+    "block2Body": "Namen, telefoonnummers, bezoekgeschiedenis — allemaal in platforms die je niet bezit. Je kunt je eigen vaste gasten niet direct bereiken. Elke keer dat ze terugkomen, betaal je opnieuw.",
+    "block3Numeral": "03",
+    "block3Title": "De herinneringen worden met de hand verstuurd.",
+    "block3Body": "De receptioniste stuurt de bevestigingen. De praktijkassistent belt de no-shows na. De ober appt de tafel van vanavond of ze nog komen. Werk dat een systeem zou moeten doen, gebeurt in mensenhoofden."
   }
 }

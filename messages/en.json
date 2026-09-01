@@ -34,5 +34,19 @@
     "ctaSecondary": "Book a 45-min call",
     "footnote": "Audit — €2,500 fixed. Two weeks.",
     "photoAlt": "Guests dining in a warm-lit restaurant interior"
+  },
+  "problem": {
+    "eyebrow": "// The problem",
+    "h2Part1": "Most service businesses are held together by memory, WhatsApp, and",
+    "h2Part2": "effort.",
+    "block1Numeral": "01",
+    "block1Title": "Reservations come in through six different channels.",
+    "block1Body": "Phone, Instagram DM, email, the website, walk-ins, and that one booking platform charging you 3% commission. Someone — usually you — keeps track in a notebook next to the register. Every missed booking is a missed evening.",
+    "block2Numeral": "02",
+    "block2Title": "Your customer data lives on someone else's server.",
+    "block2Body": "Names, phone numbers, visit history — all in platforms you don't own. You can't reach your own regulars directly. Every time they come back, you pay again.",
+    "block3Numeral": "03",
+    "block3Title": "Reminders go out by hand.",
+    "block3Body": "The receptionist sends the confirmations. The practice assistant calls the no-shows. The waiter texts tonight's table to ask if they're still coming. Work a system should do, happening in people's heads."
   }
 }
