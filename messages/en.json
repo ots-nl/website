@@ -64,7 +64,8 @@
         "price": "€2,500",
         "meta": "fixed price · two weeks",
         "linkText": "More about Audit →",
-        "href": "/#audit"
+        "href": "/#audit",
+        "photoAlt": "Notebook and laptop on a warm-lit desk"
       },
       "build": {
         "eyebrow": "02 · Build",
@@ -73,7 +74,8 @@
         "price": "€8,000 – €22,000+",
         "meta": "fixed price · fixed scope · 4–12 weeks",
         "linkText": "More about Build →",
-        "href": "/#build"
+        "href": "/#build",
+        "photoAlt": "Hands typing code on a laptop in a dimly lit workspace"
       },
       "retainer": {
         "eyebrow": "03 · Retainer",
@@ -82,7 +84,8 @@
         "price": "€1,500 – €5,000+ / month",
         "meta": "monthly · ongoing relationship",
         "linkText": "More about Retainer →",
-        "href": "/#retainer"
+        "href": "/#retainer",
+        "photoAlt": "Calendar and planner on a wooden desk"
       }
     }
   }

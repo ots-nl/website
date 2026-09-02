@@ -69,7 +69,8 @@
         "price": "€2.500",
         "meta": "vaste prijs · twee weken",
         "linkText": "Meer over Audit →",
-        "href": "/#audit"
+        "href": "/#audit",
+        "photoAlt": "Notitieboek en laptop op een warm verlichte werkplek"
       },
       "build": {
         "eyebrow": "02 · Build",
@@ -78,7 +79,8 @@
         "price": "€8.000 – €22.000+",
         "meta": "vaste prijs · vaste scope · 4–12 weken",
         "linkText": "Meer over Build →",
-        "href": "/#build"
+        "href": "/#build",
+        "photoAlt": "Handen die code typen op een laptop in een donker verlichte werkplek"
       },
       "retainer": {
         "eyebrow": "03 · Retainer",
@@ -87,7 +89,8 @@
         "price": "€1.500 – €5.000+ / maand",
         "meta": "maandelijks · doorlopende relatie",
         "linkText": "Meer over Retainer →",
-        "href": "/#retainer"
+        "href": "/#retainer",
+        "photoAlt": "Kalender en planner op een houten bureau"
       }
     }
   }

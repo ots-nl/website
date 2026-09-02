@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
@@ -12,7 +13,6 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 /**
  * WhatWeDo — the Service Ladder section below Problem. Three service cards
  * (Audit, Build, Retainer), each a single Link wrapping the whole card.
- * Photograph zones are placeholders in this step; real photos land in 9b.
  */
 export function WhatWeDo() {
   const t = useTranslations('whatWeDo');
@@ -28,6 +28,8 @@ export function WhatWeDo() {
       meta: t('cards.audit.meta'),
       linkText: t('cards.audit.linkText'),
       href: t('cards.audit.href'),
+      photoSrc: '/images/card-audit.jpg',
+      photoAlt: t('cards.audit.photoAlt'),
     },
     {
       id: 'build',
@@ -38,6 +40,8 @@ export function WhatWeDo() {
       meta: t('cards.build.meta'),
       linkText: t('cards.build.linkText'),
       href: t('cards.build.href'),
+      photoSrc: '/images/card-build.jpg',
+      photoAlt: t('cards.build.photoAlt'),
     },
     {
       id: 'retainer',
@@ -48,6 +52,8 @@ export function WhatWeDo() {
       meta: t('cards.retainer.meta'),
       linkText: t('cards.retainer.linkText'),
       href: t('cards.retainer.href'),
+      photoSrc: '/images/card-retainer.jpg',
+      photoAlt: t('cards.retainer.photoAlt'),
     },
   ];
 
@@ -87,9 +93,15 @@ export function WhatWeDo() {
                 href={card.href}
                 className="group relative flex flex-col min-h-[480px] rounded-[20px] border border-rule bg-cream overflow-hidden transition-[border-color,transform] duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] hover:border-accent hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent focus-visible:outline-offset-4"
               >
-                {/* Zone 1 — photograph placeholder */}
-                <div className="h-[240px] bg-cream-deep border-b border-dashed border-rule flex items-center justify-center">
-                  <span className="text-muted text-xs">Photograph — Step 9b</span>
+                {/* Zone 1 — photograph */}
+                <div className="relative h-[240px] rounded-t-[20px] overflow-hidden">
+                  <Image
+                    src={card.photoSrc}
+                    alt={card.photoAlt}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover [filter:sepia(0.12)_saturate(1.15)]"
+                  />
                 </div>
 
                 {/* Zone 2 — middle content */}
