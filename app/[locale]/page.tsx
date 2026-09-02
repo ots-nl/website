@@ -4,6 +4,7 @@ import { Problem } from '@/components/sections/Problem';
 import { WhatWeDo } from '@/components/sections/WhatWeDo';
 import { HowWeWork } from '@/components/sections/HowWeWork';
 import { Verticals } from '@/components/sections/Verticals';
+import { RecentEssays } from '@/components/sections/RecentEssays';
 
 export default async function Home({
   params,
@@ -20,6 +21,7 @@ export default async function Home({
       <WhatWeDo />
       <HowWeWork />
       <Verticals />
+      <RecentEssays />
     </main>
   );
 }

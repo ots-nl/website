@@ -1,6 +1,7 @@
 {
   "_notes": {
-    "verticals": "DRAFT — header.subhead pending Deepak's review before this is considered final English copy."
+    "verticals": "DRAFT — header.subhead pending Deepak's review before this is considered final English copy.",
+    "recentEssays": "PLACEHOLDER — these three essays are development-time content, NOT real published essays. Must be replaced with real essays authored by Deepak/Ankur before public launch, along with the corresponding /essays/[slug] pages built in Phase 4."
   },
   "meta": {
     "title": "OTS — Business Operating Systems for Dutch service businesses",
@@ -145,5 +146,34 @@
         "systems": ["Client Lifecycle OS", "Internal Knowledge & Delivery", "Proposal-to-Renewal"]
       }
     }
+  },
+  "recentEssays": {
+    "header": {
+      "eyebrow": "// Essays",
+      "h2": "What we've been thinking about.",
+      "viewAllLinkText": "See all essays →",
+      "viewAllHref": "/essays"
+    },
+    "essays": {
+      "e1": {
+        "meta": "8 min · Systems · February 2026",
+        "title": "Why we don't sell chatbots.",
+        "excerpt": "Every month another agency ships a chatbot. Every month the underlying operational chaos gets worse.",
+        "href": "/essays/why-we-dont-sell-chatbots"
+      },
+      "e2": {
+        "meta": "12 min · Hospitality · January 2026",
+        "title": "The reservation platform is your bank account. Someone else has the key.",
+        "excerpt": "A restaurant with 200 covers a night has a data asset worth more than most SaaS companies. Most restaurants don't own it.",
+        "href": "/essays/the-reservation-platform"
+      },
+      "e3": {
+        "meta": "10 min · Systems · December 2025",
+        "title": "What a two-week Audit actually looks like.",
+        "excerpt": "Interviews, workflows, and a 15-page report — inside the two weeks that precede every OTS Build.",
+        "href": "/essays/what-an-audit-looks-like"
+      }
+    },
+    "readLinkText": "Read essay →"
   }
 }
