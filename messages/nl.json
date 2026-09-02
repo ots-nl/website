@@ -163,19 +163,22 @@
         "meta": "8 min · Systemen · februari 2026",
         "title": "Waarom we geen chatbots verkopen.",
         "excerpt": "Elke maand brengt weer een agency een chatbot uit. Elke maand wordt de onderliggende operationele chaos erger.",
-        "href": "/essays/waarom-we-geen-chatbots-verkopen"
+        "href": "/essays/waarom-we-geen-chatbots-verkopen",
+        "photoAlt": "Werkplek met laptop en notitieboek in warm licht"
       },
       "e2": {
         "meta": "12 min · Horeca · januari 2026",
         "title": "Het reserveringsplatform is jouw bankrekening. Iemand anders heeft de sleutel.",
         "excerpt": "Een restaurant met 200 couverts per avond bezit een dataset die meer waard is dan de meeste SaaS-bedrijven. De meeste restaurants bezitten die dataset niet.",
-        "href": "/essays/het-reserveringsplatform"
+        "href": "/essays/het-reserveringsplatform",
+        "photoAlt": "Mensen die samenwerken aan een tafel met laptops en notitieboeken"
       },
       "e3": {
         "meta": "10 min · Systemen · december 2025",
         "title": "Hoe een Audit van twee weken er echt uitziet.",
         "excerpt": "Interviews, workflows en een rapport van 15 pagina's — binnen de twee weken die aan elke OTS Build voorafgaan.",
-        "href": "/essays/hoe-een-audit-eruitziet"
+        "href": "/essays/hoe-een-audit-eruitziet",
+        "photoAlt": "Notities en diagrammen op een bureau"
       }
     },
     "readLinkText": "Lees essay →"

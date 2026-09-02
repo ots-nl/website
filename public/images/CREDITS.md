@@ -29,3 +29,23 @@ All third-party imagery used on the Ontwikkeling Tech Services website is credit
  - **Source:** Pexels — https://www.pexels.com/photo/notebook-calendar-and-a-black-mug-on-a-wooden-table-4985338/
  - **Licence:** Pexels Licence
  - **Used since:** Step 09b, 02-09-2026
+
+  ## Essay Previews
+
+ - **File:** essay-chatbots.jpg
+ - **Photographer:** Vlada Karpovich
+ - **Source:** Pexels — https://www.pexels.com/photo/laptop-and-calendar-on-table-in-home-office-9969253/
+ - **Licence:** Pexels License
+ - **Used since:** Step 12b, 02-09-2026
+
+ - **File:** essay-reservations.jpg
+ - **Photographer:** Startup Stock Photos
+ - **Source:** Pexels — https://www.pexels.com/photo/person-holding-black-pen-while-sitting-7095/
+ - **Licence:** Pexels License
+ - **Used since:** Step 12b, 02-09-2026
+
+ - **File:** essay-audit.jpg
+ - **Photographer:** cottonbro studio
+ - **Source:** Pexels — https://www.pexels.com/photo/person-holding-papers-5185086/
+ - **Licence:** Pexels License
+ - **Used since:** Step 12b, 02-09-2026

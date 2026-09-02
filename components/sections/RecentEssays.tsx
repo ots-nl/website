@@ -1,6 +1,7 @@
 'use client';
 
 import { motion, useReducedMotion } from 'framer-motion';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
@@ -18,6 +19,8 @@ export function RecentEssays() {
       title: t('essays.e1.title'),
       excerpt: t('essays.e1.excerpt'),
       href: t('essays.e1.href'),
+      photoSrc: '/images/essay-chatbots.jpg',
+      photoAlt: t('essays.e1.photoAlt'),
     },
     {
       id: 'e2',
@@ -25,6 +28,8 @@ export function RecentEssays() {
       title: t('essays.e2.title'),
       excerpt: t('essays.e2.excerpt'),
       href: t('essays.e2.href'),
+      photoSrc: '/images/essay-reservations.jpg',
+      photoAlt: t('essays.e2.photoAlt'),
     },
     {
       id: 'e3',
@@ -32,6 +37,8 @@ export function RecentEssays() {
       title: t('essays.e3.title'),
       excerpt: t('essays.e3.excerpt'),
       href: t('essays.e3.href'),
+      photoSrc: '/images/essay-audit.jpg',
+      photoAlt: t('essays.e3.photoAlt'),
     },
   ];
 
@@ -67,9 +74,15 @@ export function RecentEssays() {
               }}
             >
               <Link href={essay.href} className="group flex flex-col">
-                {/* Photo placeholder — will be replaced with next/image in Step 12b */}
-                <div className="w-full aspect-[4/3] rounded-2xl overflow-hidden bg-cream border border-dashed border-rule flex items-center justify-center">
-                  <span className="text-muted text-xs">Photograph — Step 12b</span>
+                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
+                  <Image
+                    src={essay.photoSrc}
+                    alt={essay.photoAlt}
+                    fill
+                    priority={false}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="object-cover [filter:sepia(0.12)_saturate(1.15)] transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-[1.03]"
+                  />
                 </div>
 
                 {/* Content */}
