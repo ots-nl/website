@@ -2,7 +2,8 @@
   "_notes": {
     "hero": "DRAFT — direct rendering of the North Star sentence, pending Deepak's review before this is considered final Dutch copy.",
     "problem": "DRAFT — h2Part1 and h2Part2 pending Deepak's review before this is considered final Dutch copy.",
-    "whatWeDo": "DRAFT — header.subhead pending Deepak's review before this is considered final Dutch copy."
+    "whatWeDo": "DRAFT — header.subhead pending Deepak's review before this is considered final Dutch copy.",
+    "howWeWork": "DRAFT — header.h2Part1 and header.h2Part2 pending Deepak's review before this is considered final Dutch copy."
   },
   "meta": {
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
@@ -91,6 +92,36 @@
         "linkText": "Meer over Retainer →",
         "href": "/#retainer",
         "photoAlt": "Kalender en planner op een houten bureau"
+      }
+    }
+  },
+  "howWeWork": {
+    "header": {
+      "eyebrow": "// Werkwijze",
+      "h2Part1": "Van eerste bericht tot draaiend systeem,",
+      "h2Part2": "in vier eerlijke fasen.",
+      "numeral": "04"
+    },
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Discovery — 45 minuten.",
+        "body": "Een echt gesprek. Wij stellen vragen; jij vertelt hoe je bedrijf loopt. Aan het eind zeggen we eerlijk of we de juiste partner zijn — of niet."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Audit — twee weken, €2.500.",
+        "body": "We brengen je operatie in kaart. Interviews, workflows, tools. Je krijgt een geschreven rapport met een concrete roadmap."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Build — vaste prijs, vaste scope.",
+        "body": "We bouwen het systeem. Wekelijkse demo's. Documentatie tijdens het bouwen, niet erna. Training voor je team. Live gaan met vertrouwen."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Retainer — de lange termijn.",
+        "body": "We houden het systeem in de lucht, en breiden het uit terwijl je bedrijf verandert. Iedere Build wordt bedoeld om er één te worden."
       }
     }
   }

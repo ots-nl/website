@@ -88,5 +88,35 @@
         "photoAlt": "Calendar and planner on a wooden desk"
       }
     }
+  },
+  "howWeWork": {
+    "header": {
+      "eyebrow": "// How we work",
+      "h2Part1": "From first message to shipped system,",
+      "h2Part2": "in four honest phases.",
+      "numeral": "04"
+    },
+    "steps": {
+      "step1": {
+        "number": "01",
+        "title": "Discovery — 45 minutes.",
+        "body": "A real conversation. We ask questions; you tell us how your business runs. At the end, we say honestly whether we're the right partner — or not."
+      },
+      "step2": {
+        "number": "02",
+        "title": "Audit — two weeks, €2,500.",
+        "body": "We map your operation. Interviews, workflows, tools. You get a written report with a concrete roadmap."
+      },
+      "step3": {
+        "number": "03",
+        "title": "Build — fixed price, fixed scope.",
+        "body": "We build the system. Weekly demos. Documentation written as we build, not after. Training for your team. Going live with confidence."
+      },
+      "step4": {
+        "number": "04",
+        "title": "Retainer — the long term.",
+        "body": "We keep the system running, and extend it as your business changes. Every Build is meant to become one."
+      }
+    }
   }
 }
