@@ -3,7 +3,8 @@
     "hero": "DRAFT — direct rendering of the North Star sentence, pending Deepak's review before this is considered final Dutch copy.",
     "problem": "DRAFT — h2Part1 and h2Part2 pending Deepak's review before this is considered final Dutch copy.",
     "whatWeDo": "DRAFT — header.subhead pending Deepak's review before this is considered final Dutch copy.",
-    "howWeWork": "DRAFT — header.h2Part1 and header.h2Part2 pending Deepak's review before this is considered final Dutch copy."
+    "howWeWork": "DRAFT — header.h2Part1 and header.h2Part2 pending Deepak's review before this is considered final Dutch copy.",
+    "verticals": "DRAFT — header.h2 and header.subhead pending Deepak's review before this is considered final Dutch copy."
   },
   "meta": {
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
@@ -122,6 +123,30 @@
         "number": "04",
         "title": "Retainer — de lange termijn.",
         "body": "We houden het systeem in de lucht, en breiden het uit terwijl je bedrijf verandert. Iedere Build wordt bedoeld om er één te worden."
+      }
+    }
+  },
+  "verticals": {
+    "header": {
+      "eyebrow": "// Waar we het beste in zijn",
+      "h2": "Drie sectoren. Diep, niet breed.",
+      "subhead": "Drie sectoren die we door en door kennen. Geen vier, geen twaalf — drie, en we gaan diep."
+    },
+    "cards": {
+      "hospitality": {
+        "title": "Restaurants & horeca.",
+        "body": "Reserveringen die niet zoekraken. Gasten die geen commissie kosten. Herinneringen die zichzelf versturen. Alles wat er tussen \"wij hebben een tafel vrij\" en \"kom nog eens terug\" gebeurt.",
+        "systems": ["Reservation-to-Review System", "Front-of-House Operations", "Supplier & Inventory OS"]
+      },
+      "health": {
+        "title": "Klinieken & praktijken.",
+        "body": "Patiëntenintake zonder papierwerk. Herinneringen die de no-show ratio halveren. Follow-up die niet wordt vergeten. Systemen die zorg mogelijk maken in plaats van administratie.",
+        "systems": ["Patient Intake & Retention", "Clinical Operations", "No-show Recovery"]
+      },
+      "professional": {
+        "title": "Accountants, adviseurs, kantoren.",
+        "body": "De weg van offerte naar factuur, zonder één handmatige stap ertussen. Deliverables die op tijd komen. Klanten die zichzelf verlengen omdat de dienst zichzelf herhaalt.",
+        "systems": ["Client Lifecycle OS", "Internal Knowledge & Delivery", "Proposal-to-Renewal"]
       }
     }
   }

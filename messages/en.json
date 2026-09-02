@@ -1,4 +1,7 @@
 {
+  "_notes": {
+    "verticals": "DRAFT — header.subhead pending Deepak's review before this is considered final English copy."
+  },
   "meta": {
     "title": "OTS — Business Operating Systems for Dutch service businesses",
     "description": "We build Business Operating Systems for restaurants, clinics, and professional services firms in the Netherlands. Less manual work. Better data. Systems that do their work quietly."
@@ -116,6 +119,30 @@
         "number": "04",
         "title": "Retainer — the long term.",
         "body": "We keep the system running, and extend it as your business changes. Every Build is meant to become one."
+      }
+    }
+  },
+  "verticals": {
+    "header": {
+      "eyebrow": "// What we specialise in",
+      "h2": "Three industries. Deep, not broad.",
+      "subhead": "Three industries we know intimately. Not four, not a dozen — three, and we go deep."
+    },
+    "cards": {
+      "hospitality": {
+        "title": "Restaurants & hospitality.",
+        "body": "Reservations that don't get lost. Guests who don't cost commission. Reminders that send themselves. Everything that happens between \"we have a table\" and \"come back again.\"",
+        "systems": ["Reservation-to-Review System", "Front-of-House Operations", "Supplier & Inventory OS"]
+      },
+      "health": {
+        "title": "Clinics & practices.",
+        "body": "Patient intake without paperwork. Reminders that halve the no-show rate. Follow-up that doesn't get forgotten. Systems that make care possible instead of administration.",
+        "systems": ["Patient Intake & Retention", "Clinical Operations", "No-show Recovery"]
+      },
+      "professional": {
+        "title": "Accountants, advisors, firms.",
+        "body": "From quote to invoice, without a single manual step in between. Deliverables that arrive on time. Clients who renew themselves because the service repeats itself.",
+        "systems": ["Client Lifecycle OS", "Internal Knowledge & Delivery", "Proposal-to-Renewal"]
       }
     }
   }

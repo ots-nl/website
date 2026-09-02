@@ -3,6 +3,7 @@ import { Hero } from '@/components/sections/Hero';
 import { Problem } from '@/components/sections/Problem';
 import { WhatWeDo } from '@/components/sections/WhatWeDo';
 import { HowWeWork } from '@/components/sections/HowWeWork';
+import { Verticals } from '@/components/sections/Verticals';
 
 export default async function Home({
   params,
@@ -18,6 +19,7 @@ export default async function Home({
       <Problem />
       <WhatWeDo />
       <HowWeWork />
+      <Verticals />
     </main>
   );
 }
