@@ -441,5 +441,13 @@
       "eyebrow": "// Algemene voorwaarden",
       "title": "Algemene voorwaarden"
     }
+  },
+  "notFound": {
+    "eyebrow": "// 404",
+    "title": "Deze pagina bestaat niet.",
+    "body": "Misschien is de link verouderd, of hebben we de pagina verplaatst. Vanaf hier gaat het meestal het snelst terug via de startpagina of onze diensten.",
+    "homeLabel": "Naar startpagina",
+    "servicesLabel": "Bekijk onze diensten",
+    "servicesHref": "/diensten"
   }
 }
