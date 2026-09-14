@@ -49,3 +49,15 @@ All third-party imagery used on the Ontwikkeling Tech Services website is credit
  - **Source:** Pexels — https://www.pexels.com/photo/person-holding-papers-5185086/
  - **Licence:** Pexels License
  - **Used since:** Step 12b, 02-09-2026
+
+ **File:** final-cta-background.jpg
+ - **Photographer:** Svetlana Tumina
+ - **Source:** Pexels — https://www.pexels.com/photo/bokeh-of-lights-11148008/
+ - **Licence:** Pexels License
+ - **Used since:** Step 14, 02-09-2026
+
+ - **File:** final-cta-card.jpg
+ - **Photographer:** Elena Golovchenko
+ - **Source:** Pexels — https://www.pexels.com/photo/an-illuminated-desk-lamp-10922369/
+ - **Licence:** Pexels License
+ - **Used since:** Step 14, 02-09-2026

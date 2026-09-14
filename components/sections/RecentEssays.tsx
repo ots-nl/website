@@ -1,16 +1,14 @@
 'use client';
 
-import { motion, useReducedMotion } from 'framer-motion';
-import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Link } from '@/i18n/navigation';
+import { EssayCard } from '@/components/sections/essays/EssayCard';
 
 export function RecentEssays() {
   const t = useTranslations('recentEssays');
-  const shouldReduce = useReducedMotion();
 
   const essays = [
     {
@@ -62,44 +60,17 @@ export function RecentEssays() {
         {/* Cards row */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
           {essays.map((essay, i) => (
-            <motion.div
+            <EssayCard
               key={essay.id}
-              initial={shouldReduce ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.2 }}
-              transition={{
-                duration: shouldReduce ? 0 : 0.6,
-                delay: shouldReduce ? 0 : i * 0.1,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-            >
-              <Link href={essay.href} className="group flex flex-col">
-                <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden">
-                  <Image
-                    src={essay.photoSrc}
-                    alt={essay.photoAlt}
-                    fill
-                    priority={false}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover [filter:sepia(0.12)_saturate(1.15)] transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-[1.03]"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="mt-6">
-                  <div className="text-muted text-xs">{essay.meta}</div>
-                  <h3 className="font-display text-2xl leading-tight text-ink mt-2 transition-colors duration-500 group-hover:text-accent">
-                    {essay.title}
-                  </h3>
-                  <p className="text-ink-soft text-sm leading-relaxed mt-3 line-clamp-2">
-                    {essay.excerpt}
-                  </p>
-                  <div className="mt-4 text-ink text-[13px] font-medium">
-                    {t('readLinkText')}
-                  </div>
-                </div>
-              </Link>
-            </motion.div>
+              index={i}
+              href={essay.href}
+              photoSrc={essay.photoSrc}
+              photoAlt={essay.photoAlt}
+              meta={essay.meta}
+              title={essay.title}
+              excerpt={essay.excerpt}
+              readLinkText={t('readLinkText')}
+            />
           ))}
         </div>
       </Container>

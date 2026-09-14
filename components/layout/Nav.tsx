@@ -66,7 +66,7 @@ export function Nav() {
           className={[
             'type-button uppercase rounded-pill px-3 py-1 transition-colors duration-300',
             loc === locale
-              ? 'bg-ink text-cream'
+              ? 'bg-accent text-cream'
               : 'text-ink-soft hover:text-ink',
           ].join(' ')}
         >

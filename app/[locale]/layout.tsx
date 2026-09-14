@@ -5,6 +5,7 @@ import {getTranslations, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
 import {Nav} from '@/components/layout/Nav';
+import {Footer} from '@/components/layout/Footer';
 import '../globals.css';
 
 const anton = Anton({
@@ -69,12 +70,14 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
+      data-scroll-behavior="smooth"
       className={`${anton.variable} ${cormorant.variable} ${inter.variable}`}
     >
       <body>
         <NextIntlClientProvider>
           <Nav />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

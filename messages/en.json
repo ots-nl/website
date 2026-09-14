@@ -1,7 +1,11 @@
 {
   "_notes": {
     "verticals": "DRAFT — header.subhead pending Deepak's review before this is considered final English copy.",
-    "recentEssays": "PLACEHOLDER — these three essays are development-time content, NOT real published essays. Must be replaced with real essays authored by Deepak/Ankur before public launch, along with the corresponding /essays/[slug] pages built in Phase 4."
+    "recentEssays": "PLACEHOLDER — e1 and e3 are development-time content, NOT real published essays; their /essays/[slug] links 404 until essays #2 (audit) and #3 (chatbots) exist. e2 now points to the one real essay (reserveringen-zes-kanalen, Step 17) — its excerpt is a translation for chrome purposes only, the essay body itself stays Dutch-only.",
+    "team": "header.ctaHref points to /about (renders as /en/about), which doesn't exist until Step 18 — expected to 404 until then.",
+    "finalCta": "DRAFT — h2Pre and body pending Deepak's review before this is considered final English copy. eyebrow and both CTA labels are final per Step 13/14 spec.",
+    "services": "DRAFT — refuse.intro was not specified in the Step 16 spec (only the H2 and item list were given); written to match site tone, pending Deepak's review.",
+    "essays": "DRAFT (Step 17) — index.subhead and detail.cta/relatedHeading copy were not given verbatim in the spec (only h1 and the CTA card lines were); written to match site tone, pending Deepak's review. Essay content itself (content/essays/*.mdx) stays Dutch-only regardless of site locale — only page chrome is translated here."
   },
   "meta": {
     "title": "OTS — Business Operating Systems for Dutch service businesses",
@@ -68,7 +72,7 @@
         "price": "€2,500",
         "meta": "fixed price · two weeks",
         "linkText": "More about Audit →",
-        "href": "/#audit",
+        "href": "/services#audit",
         "photoAlt": "Notebook and laptop on a warm-lit desk"
       },
       "build": {
@@ -78,7 +82,7 @@
         "price": "€8,000 – €22,000+",
         "meta": "fixed price · fixed scope · 4–12 weeks",
         "linkText": "More about Build →",
-        "href": "/#build",
+        "href": "/services#build",
         "photoAlt": "Hands typing code on a laptop in a dimly lit workspace"
       },
       "retainer": {
@@ -88,7 +92,7 @@
         "price": "€1,500 – €5,000+ / month",
         "meta": "monthly · ongoing relationship",
         "linkText": "More about Retainer →",
-        "href": "/#retainer",
+        "href": "/services#retainer",
         "photoAlt": "Calendar and planner on a wooden desk"
       }
     }
@@ -163,10 +167,10 @@
         "photoAlt": "Workspace with laptop and notebook in warm light"
       },
       "e2": {
-        "meta": "12 min · Hospitality · January 2026",
-        "title": "The reservation platform is your bank account. Someone else has the key.",
-        "excerpt": "A restaurant with 200 covers a night has a data asset worth more than most SaaS companies. Most restaurants don't own it.",
-        "href": "/essays/the-reservation-platform",
+        "meta": "9 min · Hospitality · April 2026",
+        "title": "Je reserveringen komen binnen via zes kanalen. Dat is het probleem, niet de drukte.",
+        "excerpt": "Most restaurants don't lose revenue from too few guests. They lose it because nobody knows exactly who's coming, when, and through which channel they said so. (Essay content is Dutch-only for now.)",
+        "href": "/essays/reserveringen-zes-kanalen",
         "photoAlt": "People collaborating at a table with laptops and notebooks"
       },
       "e3": {
@@ -178,5 +182,260 @@
       }
     },
     "readLinkText": "Read essay →"
+  },
+  "team": {
+    "header": {
+      "eyebrow": "// The team",
+      "h2": "Five people. One standard.",
+      "subhead": "OTS is founded by three people — Virat, Ankur, and Deepak. We work with a small team of two across the Netherlands and India. Every project is delivered by named people, not by 'the team.' You will know exactly who is building your system.",
+      "ctaLabel": "Meet the whole team →",
+      "ctaHref": "/about"
+    },
+    "founders": {
+      "deepak": {
+        "name": "Deepak",
+        "role": "Commercial & Trust",
+        "description": "Netherlands anchor. Owns the client relationship from first message to signed engagement."
+      },
+      "ankur": {
+        "name": "Ankur",
+        "role": "Delivery & Operations",
+        "description": "The bridge between technical build and client outcome. Owns every delivery."
+      },
+      "virat": {
+        "name": "Virat",
+        "role": "Product & Technical Direction",
+        "description": "Long-term technical builder. Owns architecture and the direction of the eventual platform."
+      }
+    }
+  },
+  "finalCta": {
+    "eyebrow": "// Next step",
+    "h2Pre": "When you're ready, we're ",
+    "h2Accent": "here",
+    "h2Suffix": ".",
+    "body": "An Audit is €2,500. It takes two weeks. If we're not the right partner for you, we'll tell you at the end of the Discovery call — and we'll suggest someone who might be.",
+    "ctaPrimary": "Request an Audit",
+    "ctaSecondary": "Book a 45-min call",
+    "backgroundAlt": "",
+    "cardAlt": "Close-up of an OTS system in use on the floor"
+  },
+  "footer": {
+    "brand": {
+      "wordmark": "ontwikkeling.",
+      "tagline": "Behind every smooth business is a better system.",
+      "trust": "KVK 42027611 · BTW NL005440779B20 · Amsterdam"
+    },
+    "services": {
+      "header": "Services",
+      "links": {
+        "audit": { "label": "Audit", "href": "/services#audit" },
+        "build": { "label": "Build", "href": "/services#build" },
+        "retainer": { "label": "Retainer", "href": "/services#retainer" },
+        "all": { "label": "All services", "href": "/services" }
+      }
+    },
+    "company": {
+      "header": "Company",
+      "links": {
+        "essays": { "label": "Essays", "href": "/essays" },
+        "about": { "label": "About", "href": "/about" },
+        "contact": { "label": "Contact", "href": "/contact" }
+      }
+    },
+    "contact": {
+      "header": "Contact",
+      "email": "admin@ontwikkelingtechservices.nl",
+      "links": {
+        "privacy": { "label": "Privacy", "href": "/privacy" },
+        "terms": { "label": "Terms", "href": "/terms" }
+      }
+    },
+    "bottom": {
+      "copyright": "© 2026 Ontwikkeling Tech Services. All rights reserved."
+    }
+  },
+  "services": {
+    "pageHeader": {
+      "eyebrow": "// Services",
+      "h1": "Three services. One progression. No hourly work.",
+      "subhead": "OTS sells three engagements: an Audit, a Build, and a Retainer. Every client relationship follows this path. We don't sell hourly work. We don't sell one-off automations. We don't sell \"chatbots.\" Below is what each one is, what it costs, and what you get."
+    },
+    "labels": {
+      "whatItIs": "What it is",
+      "whatYouGet": "What you get",
+      "howItGoes": "How it runs",
+      "whatYouDontGet": "What you don't get"
+    },
+    "audit": {
+      "eyebrow": "01 — Audit",
+      "title": "The diagnosis.",
+      "numeral": "01",
+      "price": "€2,500",
+      "meta": "fixed price · two weeks",
+      "whatItIs": "A two-week diagnosis of how your business actually runs today. We map every workflow, every tool you use, every piece of manual work your team does. At the end, you get a written report with a concrete systems roadmap.",
+      "whatYouGet": [
+        "A written report (10–15 pages)",
+        "A detailed workflow map of the audited function",
+        "A ranked list of friction points, with the cost to your business",
+        "A recommended systems roadmap",
+        "One concrete \"quick win\" you can act on yourself tomorrow"
+      ],
+      "timeline": [
+        { "label": "Week 1", "text": "Kickoff call, interviews (2–4 stakeholders), workflow mapping" },
+        { "label": "Week 2", "text": "Analysis, report drafting, internal review, delivery call" },
+        { "label": "Week 3 (optional, no extra cost)", "text": "one 60-minute follow-up" }
+      ],
+      "whatYouDontGet": "No implementation. No software. No recommendations without evidence. An Audit is a diagnosis — not a treatment. That's what the Build is for.",
+      "cta": "Request an Audit",
+      "ctaHref": "/#audit"
+    },
+    "build": {
+      "eyebrow": "02 — Build",
+      "title": "The system.",
+      "numeral": "02",
+      "price": "€8,000–22,000+",
+      "meta": "fixed price · fixed scope · four to twelve weeks",
+      "whatItIs": "A fixed-price, fixed-scope engagement of four to twelve weeks. We build a working Business Operating System for one specific function in your business — reservations, patient intake, quote-to-invoice — with documentation and training built in from day one, not added afterwards.",
+      "tiers": [
+        { "name": "Foundation", "price": "€8,000", "description": "one system, one function, 2–3 integrations", "footnote": "4–6 weeks" },
+        { "name": "Core", "price": "€14,000", "description": "full operating system for one function, 4–6 integrations", "footnote": "6–8 weeks" },
+        { "name": "Complete", "price": "€22,000+", "description": "multi-function operating system, 6+ integrations, custom logic", "footnote": "8–12 weeks" }
+      ],
+      "sharedItems": [
+        "full engineering, design and systems logic",
+        "complete written documentation",
+        "training for your team",
+        "30 days of stabilisation after delivery, included"
+      ],
+      "timeline": [
+        { "label": "Discovery (week 1)", "text": "kickoff, requirements, technical design" },
+        { "label": "Build (week 2 through N−2)", "text": "build, weekly demos" },
+        { "label": "Testing (week N−1)", "text": "end-to-end testing with the client" },
+        { "label": "Handover (week N)", "text": "documentation, training, going live" },
+        { "label": "Stabilisation", "text": "30 days after delivery, included" }
+      ],
+      "whatYouDontGet": "Third-party software licences — those you pay for directly. Maintenance after the 30-day stabilisation period — that's the Retainer. New functionality after scope is signed off, without a change order.",
+      "cta": "Book a 45-min call",
+      "ctaHref": "/#contact"
+    },
+    "retainer": {
+      "eyebrow": "03 — Retainer",
+      "title": "The partner.",
+      "numeral": "03",
+      "price": "€1,500–5,000+ / month",
+      "meta": "monthly · cancellable",
+      "whatItIs": "A monthly partnership in which OTS maintains, monitors, and extends the systems we've built for you. Where most agencies stop at delivery, this is where the long term begins.",
+      "tiers": [
+        { "name": "Monitor", "price": "€1,500/month", "description": "monitoring, small fixes, monthly health report, one small extension per month", "footnote": "response within 2 business days" },
+        { "name": "Operate", "price": "€3,000/month", "description": "everything in Monitor, plus proactive improvements, two extension projects per month, quarterly review", "footnote": "response within 1 business day" },
+        { "name": "Partner", "price": "€5,000+/month", "description": "everything in Operate, plus dedicated engineering time, roadmap planning, new systems within agreed scope", "footnote": "on-call SLA" }
+      ],
+      "timeline": [
+        { "label": "Every month", "text": "monitoring and a health check" },
+        { "label": "Every quarter", "text": "strategic review" },
+        { "label": "Ongoing", "text": "small improvements and priority work at your tier" }
+      ],
+      "whatYouDontGet": "New, large systems outside scope without a separate Build agreement, unless you're on the Partner tier. No ad-hoc hours without a monthly agreement.",
+      "cta": "Book a 45-min call",
+      "ctaHref": "/#contact"
+    },
+    "ladder": {
+      "nodes": [
+        { "number": "01", "name": "Audit", "meta": "€2,500 · two weeks" },
+        { "number": "02", "name": "Build", "meta": "€8,000–22,000+ · 4–12 weeks" },
+        { "number": "03", "name": "Retainer", "meta": "€1,500–5,000+/month · ongoing" }
+      ],
+      "explainer": "Every OTS client relationship follows this path. Roughly six in ten Audits become a Build. Roughly seven in ten Builds become a Retainer. The Retainer is where the real relationship lives — the long, quiet, compounding partnership. That's what we're working toward from the very first conversation."
+    },
+    "refuse": {
+      "h2": "What we refuse to sell.",
+      "intro": "OTS is just as clear about what we don't do as about what we do.",
+      "items": [
+        "Hourly or time-and-materials work. Ever.",
+        "One-off \"build-a-single-workflow\" jobs without systems context.",
+        "Standalone chatbot projects.",
+        "Website design or marketing as a standalone service.",
+        "Custom SaaS builds for external clients.",
+        "Any engagement under €2,500 total.",
+        "\"Discovery calls\" that quietly turn into free strategy sessions."
+      ]
+    }
+  },
+  "essays": {
+    "index": {
+      "eyebrow": "// Essays",
+      "h1": "Systems, thinking, and the businesses behind them.",
+      "subhead": "Essays on systems, operations, and why most businesses don't fail from too little demand — they fail from too little overview.",
+      "filters": {
+        "all": "All",
+        "hospitality": "Hospitality",
+        "health": "Health",
+        "professional": "Professional",
+        "systemsThinking": "Systems thinking"
+      },
+      "emptyState": "No essays in this category yet.",
+      "readLinkText": "Read essay →"
+    },
+    "detail": {
+      "signature": "— Written by Deepak Sharma, Founder at OTS",
+      "cta": {
+        "heading": "Recognize this in your own business?",
+        "buttonLabel": "Request an Audit",
+        "href": "/#audit"
+      },
+      "relatedHeading": "More essays"
+    }
+  },
+  "contact": {
+    "eyebrow": "// Contact",
+    "h1Pre": "Let's have a ",
+    "h1Accent": "real",
+    "h1Suffix": " conversation.",
+    "body": "A Discovery call takes 45 minutes. No slide deck. No sales pitch. We ask questions about your business; you tell us what you actually need. Are we the right partner? We'll say so. Are we not? We'll say that too — and tell you who might be.",
+    "email": "admin@ontwikkelingtechservices.nl",
+    "responsePromise": "We reply within 24 hours on business days.",
+    "form": {
+      "naam": { "label": "Name" },
+      "bedrijf": { "label": "Company" },
+      "email": { "label": "Email" },
+      "telefoon": { "label": "Phone (optional)" },
+      "sector": {
+        "label": "Industry",
+        "placeholder": "Choose an industry",
+        "options": {
+          "hospitality": "Hospitality",
+          "clinic": "Clinic",
+          "professional": "Professional services",
+          "other": "Other"
+        }
+      },
+      "bericht": { "label": "What would you like to discuss?" },
+      "consent": "I agree that OTS may use this information to contact me.",
+      "submit": "Send",
+      "submitting": "Sending…",
+      "privacyLinkLabel": "View our privacy policy",
+      "privacyHref": "/privacy",
+      "success": {
+        "title": "Thank you.",
+        "body": "We've received your message. We'll reply within 24 hours on business days."
+      },
+      "error": {
+        "generic": "Something went wrong. Please try again or email us directly at admin@ontwikkelingtechservices.nl.",
+        "rateLimit": "You've reached the maximum number of attempts. Please try again later.",
+        "validation": "Please fill in all required fields correctly."
+      }
+    }
+  },
+  "legal": {
+    "lastUpdatedLabel": "Last updated",
+    "privacy": {
+      "eyebrow": "// Privacy Policy",
+      "title": "Privacy Policy"
+    },
+    "terms": {
+      "eyebrow": "// Terms & Conditions",
+      "title": "Terms & Conditions"
+    }
   }
 }

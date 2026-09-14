@@ -5,7 +5,11 @@
     "whatWeDo": "DRAFT — header.subhead pending Deepak's review before this is considered final Dutch copy.",
     "howWeWork": "DRAFT — header.h2Part1 and header.h2Part2 pending Deepak's review before this is considered final Dutch copy.",
     "verticals": "DRAFT — header.h2 and header.subhead pending Deepak's review before this is considered final Dutch copy.",
-    "recentEssays": "PLACEHOLDER — these three essays are development-time content, NOT real published essays. Must be replaced with real essays authored by Deepak/Ankur before public launch, along with the corresponding /essays/[slug] pages built in Phase 4. DRAFT — header.viewAllLinkText and readLinkText pending Deepak's review before this is considered final Dutch copy."
+    "recentEssays": "PLACEHOLDER — e1 and e3 are development-time content, NOT real published essays; their /essays/[slug] links 404 until essays #2 (audit) and #3 (chatbots) exist. e2 now points to the one real essay (reserveringen-zes-kanalen, Step 17). DRAFT — header.viewAllLinkText and readLinkText pending Deepak's review before this is considered final Dutch copy.",
+    "team": "DRAFT — header.h2 and header.subhead pending Deepak's review before this is considered final Dutch copy. header.ctaHref points to /over-ons, which doesn't exist until Step 18 — expected to 404 until then.",
+    "finalCta": "DRAFT — h2Pre and body pending Deepak's review before this is considered final Dutch copy. eyebrow and both CTA labels are final per Step 13/14 spec.",
+    "services": "DRAFT — refuse.intro was not specified in the Step 16 spec (only the H2 and item list were given); written to match site tone, pending Deepak's review.",
+    "essays": "DRAFT (Step 17) — index.subhead and detail.cta/relatedHeading copy were not given verbatim in the spec (only h1 and the CTA card lines were); written to match site tone, pending Deepak's review. Essay content itself (content/essays/*.mdx) stays Dutch-only regardless of site locale — only page chrome is translated here."
   },
   "meta": {
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
@@ -72,7 +76,7 @@
         "price": "€2.500",
         "meta": "vaste prijs · twee weken",
         "linkText": "Meer over Audit →",
-        "href": "/#audit",
+        "href": "/diensten#audit",
         "photoAlt": "Notitieboek en laptop op een warm verlichte werkplek"
       },
       "build": {
@@ -82,7 +86,7 @@
         "price": "€8.000 – €22.000+",
         "meta": "vaste prijs · vaste scope · 4–12 weken",
         "linkText": "Meer over Build →",
-        "href": "/#build",
+        "href": "/diensten#build",
         "photoAlt": "Handen die code typen op een laptop in een donker verlichte werkplek"
       },
       "retainer": {
@@ -92,7 +96,7 @@
         "price": "€1.500 – €5.000+ / maand",
         "meta": "maandelijks · doorlopende relatie",
         "linkText": "Meer over Retainer →",
-        "href": "/#retainer",
+        "href": "/diensten#retainer",
         "photoAlt": "Kalender en planner op een houten bureau"
       }
     }
@@ -167,10 +171,10 @@
         "photoAlt": "Werkplek met laptop en notitieboek in warm licht"
       },
       "e2": {
-        "meta": "12 min · Horeca · januari 2026",
-        "title": "Het reserveringsplatform is jouw bankrekening. Iemand anders heeft de sleutel.",
-        "excerpt": "Een restaurant met 200 couverts per avond bezit een dataset die meer waard is dan de meeste SaaS-bedrijven. De meeste restaurants bezitten die dataset niet.",
-        "href": "/essays/het-reserveringsplatform",
+        "meta": "9 min · Horeca · april 2026",
+        "title": "Je reserveringen komen binnen via zes kanalen. Dat is het probleem, niet de drukte.",
+        "excerpt": "De meeste restaurants verliezen geen omzet door te weinig gasten. Ze verliezen omzet doordat niemand precies weet wie er komt, wanneer, en via welk kanaal ze het hebben laten weten.",
+        "href": "/essays/reserveringen-zes-kanalen",
         "photoAlt": "Mensen die samenwerken aan een tafel met laptops en notitieboeken"
       },
       "e3": {
@@ -182,5 +186,260 @@
       }
     },
     "readLinkText": "Lees essay →"
+  },
+  "team": {
+    "header": {
+      "eyebrow": "// Het team",
+      "h2": "Vijf mensen. Eén standaard.",
+      "subhead": "OTS is opgericht door drie mensen — Virat, Ankur en Deepak. We werken met een klein team van twee door heel Nederland en India. Elk project wordt geleverd door mensen met een naam, niet door 'het team'. Je weet precies wie jouw systeem bouwt.",
+      "ctaLabel": "Ontmoet het hele team →",
+      "ctaHref": "/over-ons"
+    },
+    "founders": {
+      "deepak": {
+        "name": "Deepak",
+        "role": "Commercieel & Vertrouwen",
+        "description": "Nederland-anker. Draagt de klantrelatie van eerste bericht tot getekende opdracht."
+      },
+      "ankur": {
+        "name": "Ankur",
+        "role": "Levering & Operatie",
+        "description": "De brug tussen technische bouw en klantresultaat. Verantwoordelijk voor elke levering."
+      },
+      "virat": {
+        "name": "Virat",
+        "role": "Product & Technische Richting",
+        "description": "Langetermijn technisch bouwer. Verantwoordelijk voor architectuur en de richting van het toekomstige platform."
+      }
+    }
+  },
+  "finalCta": {
+    "eyebrow": "// Volgende stap",
+    "h2Pre": "Wanneer je zover bent, zijn wij ",
+    "h2Accent": "hier",
+    "h2Suffix": ".",
+    "body": "Een Audit kost €2.500. Het duurt twee weken. Zijn we niet de juiste partner voor jou? Dan zeggen we dat eerlijk aan het eind van het Discovery-gesprek — en verwijzen we je door naar iemand die dat wél is.",
+    "ctaPrimary": "Vraag een Audit aan",
+    "ctaSecondary": "Boek een gesprek van 45 minuten",
+    "backgroundAlt": "",
+    "cardAlt": "Close-up van een OTS-systeem in gebruik op de werkvloer"
+  },
+  "footer": {
+    "brand": {
+      "wordmark": "ontwikkeling.",
+      "tagline": "Behind every smooth business is a better system.",
+      "trust": "KVK 42027611 · BTW NL005440779B20 · Amsterdam"
+    },
+    "services": {
+      "header": "Diensten",
+      "links": {
+        "audit": { "label": "Audit", "href": "/diensten#audit" },
+        "build": { "label": "Build", "href": "/diensten#build" },
+        "retainer": { "label": "Retainer", "href": "/diensten#retainer" },
+        "all": { "label": "Alle diensten", "href": "/diensten" }
+      }
+    },
+    "company": {
+      "header": "Bedrijf",
+      "links": {
+        "essays": { "label": "Essays", "href": "/essays" },
+        "about": { "label": "Over ons", "href": "/over-ons" },
+        "contact": { "label": "Contact", "href": "/contact" }
+      }
+    },
+    "contact": {
+      "header": "Contact",
+      "email": "admin@ontwikkelingtechservices.nl",
+      "links": {
+        "privacy": { "label": "Privacybeleid", "href": "/privacybeleid" },
+        "terms": { "label": "Algemene voorwaarden", "href": "/algemene-voorwaarden" }
+      }
+    },
+    "bottom": {
+      "copyright": "© 2026 Ontwikkeling Tech Services. Alle rechten voorbehouden."
+    }
+  },
+  "services": {
+    "pageHeader": {
+      "eyebrow": "// Diensten",
+      "h1": "Drie diensten. Eén weg. Geen uurwerk.",
+      "subhead": "OTS verkoopt drie trajecten: een Audit, een Build, en een Retainer. Elke klantrelatie doorloopt deze weg. We verkopen geen uurwerk. We verkopen geen losse automatiseringen. We verkopen geen 'chatbots.' Hieronder wat elk is, wat het kost, en wat je krijgt."
+    },
+    "labels": {
+      "whatItIs": "Wat het is",
+      "whatYouGet": "Wat je krijgt",
+      "howItGoes": "Hoe het loopt",
+      "whatYouDontGet": "Wat je niet krijgt"
+    },
+    "audit": {
+      "eyebrow": "01 — Audit",
+      "title": "De diagnose.",
+      "numeral": "01",
+      "price": "€2.500",
+      "meta": "vaste prijs · twee weken",
+      "whatItIs": "Een tweewekelijkse diagnose van hoe je bedrijf nu operationeel loopt. We brengen elke workflow in kaart, elk hulpmiddel dat je gebruikt, elk stuk handwerk dat je team doet. Aan het eind lever je een geschreven rapport met een concrete systeemroadmap.",
+      "whatYouGet": [
+        "Een geschreven rapport (10–15 pagina's)",
+        "Een gedetailleerde workflow-kaart van de audited functie",
+        "Een gerangschikte lijst van frictiepunten, met kosten voor je bedrijf",
+        "Een aanbevolen systeemroadmap",
+        "Één concrete \"quick win\" die je zelf morgen kunt uitvoeren"
+      ],
+      "timeline": [
+        { "label": "Week 1", "text": "Kickoff-gesprek, interviews (2–4 stakeholders), workflow-mapping" },
+        { "label": "Week 2", "text": "Analyse, opstellen rapport, interne review, opleveringsgesprek" },
+        { "label": "Week 3 (optioneel, zonder extra kosten)", "text": "één follow-up van 60 minuten" }
+      ],
+      "whatYouDontGet": "Geen implementatie. Geen software. Geen aanbevelingen zonder onderbouwing. Een Audit is een diagnose — geen behandeling. Dat is wat de Build voor is.",
+      "cta": "Vraag een Audit aan",
+      "ctaHref": "/#audit"
+    },
+    "build": {
+      "eyebrow": "02 — Build",
+      "title": "Het systeem.",
+      "numeral": "02",
+      "price": "€8.000–22.000+",
+      "meta": "vaste prijs · vaste scope · vier tot twaalf weken",
+      "whatItIs": "Een vaste-prijs, vaste-scope traject van vier tot twaalf weken. We bouwen een werkend Business Operating System voor één specifieke functie in je bedrijf — reserveringen, patiëntenintake, offerte-tot-factuur — inclusief documentatie en training vanaf dag één, niet achteraf.",
+      "tiers": [
+        { "name": "Foundation", "price": "€8.000", "description": "één systeem, één functie, 2–3 integraties", "footnote": "4–6 weken" },
+        { "name": "Core", "price": "€14.000", "description": "volledig operating system voor één functie, 4–6 integraties", "footnote": "6–8 weken" },
+        { "name": "Complete", "price": "€22.000+", "description": "multi-functie operating system, 6+ integraties, maatwerk logica", "footnote": "8–12 weken" }
+      ],
+      "sharedItems": [
+        "volledige engineering, design en systeemlogica",
+        "volledige geschreven documentatie",
+        "training voor je team",
+        "30 dagen stabilisatie na oplevering, inbegrepen"
+      ],
+      "timeline": [
+        { "label": "Discovery (week 1)", "text": "kickoff, requirements, technisch ontwerp" },
+        { "label": "Build (week 2 t/m N−2)", "text": "bouw, wekelijkse demo's" },
+        { "label": "Testing (week N−1)", "text": "end-to-end testen met klant" },
+        { "label": "Handover (week N)", "text": "documentatie, training, live gaan" },
+        { "label": "Stabilisatie", "text": "30 dagen na oplevering, inbegrepen" }
+      ],
+      "whatYouDontGet": "Licenties van software van derden — die betaal je rechtstreeks. Onderhoud na de 30 dagen stabilisatie — dat is de Retainer. Nieuwe functionaliteit na ondertekende scope, zonder change order.",
+      "cta": "Boek een gesprek van 45 minuten",
+      "ctaHref": "/#contact"
+    },
+    "retainer": {
+      "eyebrow": "03 — Retainer",
+      "title": "De partner.",
+      "numeral": "03",
+      "price": "€1.500–5.000+ / maand",
+      "meta": "maandelijks · opzegbaar",
+      "whatItIs": "Een maandelijkse samenwerking waarin OTS de systemen die we voor je hebben gebouwd onderhoudt, bewaakt en uitbreidt. Waar de meeste bureaus stoppen bij oplevering, begint hier de lange termijn.",
+      "tiers": [
+        { "name": "Monitor", "price": "€1.500/maand", "description": "monitoring, kleine fixes, maandelijks health report, één kleine uitbreiding per maand", "footnote": "reactie binnen 2 werkdagen" },
+        { "name": "Operate", "price": "€3.000/maand", "description": "alles in Monitor, plus proactieve verbeteringen, twee uitbreidingsprojecten per maand, kwartaalreview", "footnote": "reactie binnen 1 werkdag" },
+        { "name": "Partner", "price": "€5.000+/maand", "description": "alles in Operate, plus toegewijde engineering tijd, roadmapplanning, nieuwe systemen binnen afgesproken scope", "footnote": "on-call SLA" }
+      ],
+      "timeline": [
+        { "label": "Iedere maand", "text": "monitoring en gezondheidscheck" },
+        { "label": "Ieder kwartaal", "text": "strategische review" },
+        { "label": "Doorlopend", "text": "kleine verbeteringen en prioriteitswerk volgens jouw niveau" }
+      ],
+      "whatYouDontGet": "Nieuwe grote systemen buiten scope zonder aparte Build-overeenkomst, tenzij je op Partner-niveau zit. Geen losse ad-hoc uren zonder maandelijkse overeenkomst.",
+      "cta": "Boek een gesprek van 45 minuten",
+      "ctaHref": "/#contact"
+    },
+    "ladder": {
+      "nodes": [
+        { "number": "01", "name": "Audit", "meta": "€2.500 · twee weken" },
+        { "number": "02", "name": "Build", "meta": "€8.000–22.000+ · 4–12 weken" },
+        { "number": "03", "name": "Retainer", "meta": "€1.500–5.000+/maand · doorlopend" }
+      ],
+      "explainer": "Elke klantrelatie bij OTS doorloopt deze weg. Ongeveer zes op de tien Audits worden een Build. Ongeveer zeven op de tien Builds worden een Retainer. De Retainer is waar de echte relatie leeft — het lange, stille, samengestelde partnerschap. Dat is waar we naartoe werken bij elk eerste gesprek."
+    },
+    "refuse": {
+      "h2": "Wat we weigeren te verkopen.",
+      "intro": "OTS is net zo duidelijk over wat we niet doen als over wat we wel doen.",
+      "items": [
+        "Uurwerk of tijd-en-materiaal. Nooit.",
+        "Losse \"bouw-één-workflow\" opdrachten zonder systeemcontext.",
+        "Standalone chatbot-projecten.",
+        "Website design of marketing als losse dienst.",
+        "Custom SaaS-builds voor externe klanten.",
+        "Elke opdracht onder €2.500 totaal.",
+        "\"Ontdekkingsgesprekken\" die stiekem gratis strategie-sessies worden."
+      ]
+    }
+  },
+  "essays": {
+    "index": {
+      "eyebrow": "// Essays",
+      "h1": "Systemen, denken, en de bedrijven erachter.",
+      "subhead": "Essays over systemen, operaties en waarom de meeste bedrijven niet stuklopen op te weinig vraag — maar op te weinig overzicht.",
+      "filters": {
+        "all": "Alles",
+        "hospitality": "Horeca",
+        "health": "Zorg",
+        "professional": "Professioneel",
+        "systemsThinking": "Systeemdenken"
+      },
+      "emptyState": "Nog geen essays in deze categorie.",
+      "readLinkText": "Lees essay →"
+    },
+    "detail": {
+      "signature": "— Geschreven door Deepak Sharma, Founder bij OTS",
+      "cta": {
+        "heading": "Herken je dit in je eigen bedrijf?",
+        "buttonLabel": "Vraag een Audit aan",
+        "href": "/#audit"
+      },
+      "relatedHeading": "Meer essays"
+    }
+  },
+  "contact": {
+    "eyebrow": "// Contact",
+    "h1Pre": "Laten we een ",
+    "h1Accent": "echt",
+    "h1Suffix": " gesprek voeren.",
+    "body": "Een Discovery-gesprek duurt 45 minuten. Geen slide deck. Geen verkooppraatje. Wij stellen vragen over je bedrijf; jij vertelt wat je daadwerkelijk nodig hebt. Zijn we de juiste partner? Dan zeggen we dat. Zijn we het niet? Dan zeggen we dat ook — en vertellen we je wie dat mogelijk wel is.",
+    "email": "admin@ontwikkelingtechservices.nl",
+    "responsePromise": "We reageren binnen 24 uur op werkdagen.",
+    "form": {
+      "naam": { "label": "Naam" },
+      "bedrijf": { "label": "Bedrijf" },
+      "email": { "label": "E-mail" },
+      "telefoon": { "label": "Telefoon (optioneel)" },
+      "sector": {
+        "label": "Sector",
+        "placeholder": "Kies een sector",
+        "options": {
+          "hospitality": "Horeca",
+          "clinic": "Kliniek",
+          "professional": "Professionele dienstverlening",
+          "other": "Anders"
+        }
+      },
+      "bericht": { "label": "Wat wil je bespreken?" },
+      "consent": "Ik ga akkoord dat OTS deze gegevens gebruikt om contact met mij op te nemen.",
+      "submit": "Verstuur",
+      "submitting": "Versturen…",
+      "privacyLinkLabel": "Bekijk ons privacybeleid",
+      "privacyHref": "/privacybeleid",
+      "success": {
+        "title": "Bedankt.",
+        "body": "We hebben je bericht ontvangen. We reageren binnen 24 uur op werkdagen."
+      },
+      "error": {
+        "generic": "Er ging iets mis. Probeer het opnieuw of mail ons direct op admin@ontwikkelingtechservices.nl.",
+        "rateLimit": "Je hebt het maximale aantal pogingen bereikt. Probeer het later opnieuw.",
+        "validation": "Vul alle verplichte velden correct in."
+      }
+    }
+  },
+  "legal": {
+    "lastUpdatedLabel": "Laatst bijgewerkt",
+    "privacy": {
+      "eyebrow": "// Privacybeleid",
+      "title": "Privacybeleid"
+    },
+    "terms": {
+      "eyebrow": "// Algemene voorwaarden",
+      "title": "Algemene voorwaarden"
+    }
   }
 }
