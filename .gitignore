@@ -57,3 +57,7 @@ next-env.d.ts
 
 # QA screenshots — local evidence only, not tracked long-term
 qa-screenshots/
+
+# Stray non-project files at repo root
+/sheets*.pdf
+/prompts/Debate_Teams.*
