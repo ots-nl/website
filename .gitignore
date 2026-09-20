@@ -54,3 +54,6 @@ next-env.d.ts
 
 .mcp.json
 .playwright-mcp/
+
+# QA screenshots — local evidence only, not tracked long-term
+qa-screenshots/
