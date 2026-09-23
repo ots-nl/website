@@ -6,6 +6,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '../../i18n/routing';
 import {Nav} from '@/components/layout/Nav';
 import {Footer} from '@/components/layout/Footer';
+import {SITE_URL} from '@/lib/metadata';
 import '../globals.css';
 
 const anton = Anton({
@@ -45,8 +46,19 @@ export async function generateMetadata({
   const t = await getTranslations({locale, namespace: 'meta'});
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: t('title'),
     description: t('description'),
+    openGraph: {
+      siteName: 'Ontwikkeling Tech Services',
+      locale: locale === 'nl' ? 'nl_NL' : 'en_US',
+      type: 'website',
+      images: ['/og-default.png'],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: ['/og-default.png'],
+    },
   };
 }
 

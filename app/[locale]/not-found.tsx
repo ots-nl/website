@@ -1,7 +1,21 @@
-import { getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
+import { getLocale, getTranslations } from 'next-intl/server';
 import { Container } from '@/components/layout/Container';
 import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Button } from '@/components/ui/Button';
+
+// not-found.tsx receives no props (App Router convention), so locale comes
+// from next-intl's request context (set via setRequestLocale higher up)
+// rather than from a params argument.
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getLocale();
+  const t = await getTranslations({ locale, namespace: 'metadata.notFound' });
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  };
+}
 
 /**
  * not-found.tsx — App Router convention: catches both URL-based 404s and

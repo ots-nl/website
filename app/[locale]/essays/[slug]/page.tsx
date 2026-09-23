@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
@@ -9,6 +10,30 @@ import { AsteriskBreak } from '@/components/ui/AsteriskBreak';
 import { EssayCard } from '@/components/sections/essays/EssayCard';
 import { essayMdxComponents } from '@/components/sections/essays/mdxComponents';
 import { formatEssayDate, getAllEssays, getEssayBySlug, getRelatedEssays } from '@/lib/mdx';
+import { buildPageMetadata } from '@/lib/metadata';
+
+// Per-essay metadata comes from the MDX frontmatter (title/deck), not the
+// translations file — the same copy for every locale until essays get
+// localized content of their own.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string; slug: string }>;
+}): Promise<Metadata> {
+  const { locale, slug } = await params;
+  const essay = getEssayBySlug(slug);
+
+  if (!essay) {
+    notFound();
+  }
+
+  return buildPageMetadata({
+    title: essay.title,
+    description: essay.deck,
+    path: locale === 'en' ? `/en/essays/${slug}` : `/essays/${slug}`,
+    locale,
+  });
+}
 
 // Maps an essay's frontmatter category to the essays.index.filters translation key.
 const CATEGORY_KEY_BY_VALUE: Record<string, string> = {

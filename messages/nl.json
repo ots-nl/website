@@ -15,6 +15,36 @@
     "title": "OTS — Business Operating Systems voor dienstverleners in Nederland",
     "description": "Wij bouwen Business Operating Systems voor restaurants, klinieken en professionele dienstverleners in Nederland. Minder handwerk. Betere data. Systemen die stil hun werk doen."
   },
+  "metadata": {
+    "homepage": {
+      "title": "Ontwikkeling Tech Services — Business operating systems voor dienstverleners",
+      "description": "OTS bouwt operating systems die het handwerk uit dienstverlenende bedrijven halen. Een Audit, een Build, een Retainer. Geen uurwerk. Geen losse automatiseringen."
+    },
+    "services": {
+      "title": "Diensten — Audit, Build, Retainer | OTS",
+      "description": "Drie diensten. Eén weg. Een Audit van twee weken (€2.500), een vaste-prijs Build, en een maandelijkse Retainer. Bekijk wat elk kost en wat je krijgt."
+    },
+    "essaysIndex": {
+      "title": "Essays over systemen en dienstverlening | OTS",
+      "description": "Denken over systemen, bedrijfsprocessen, en waarom losse tools zelden echte problemen oplossen. Geschreven voor eigenaren van dienstverlenende bedrijven."
+    },
+    "contact": {
+      "title": "Contact — Vraag een Discovery-gesprek aan | OTS",
+      "description": "Een Discovery-gesprek van 45 minuten. Geen slide deck, geen verkooppraatje. Wij stellen vragen; jij vertelt wat je nodig hebt."
+    },
+    "privacy": {
+      "title": "Privacybeleid | OTS",
+      "description": "Hoe OTS omgaat met persoonsgegevens die via deze website worden verzameld — inclusief welke verwerkers we gebruiken en jouw rechten onder de AVG."
+    },
+    "terms": {
+      "title": "Algemene voorwaarden | OTS",
+      "description": "De algemene voorwaarden voor OTS's dienstverlening: Audit, Build, en Retainer. Toepasselijkheid, prijzen, aansprakelijkheid, en toepasselijk recht."
+    },
+    "notFound": {
+      "title": "Pagina niet gevonden | OTS",
+      "description": "Deze pagina bestaat niet. Ga terug naar de startpagina of bekijk onze diensten."
+    }
+  },
   "home": {
     "eyebrow": "Stap 4a — Internationalisatie",
     "tagline_part1": "Achter elk soepel bedrijf zit een",

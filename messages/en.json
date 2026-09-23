@@ -11,6 +11,28 @@
     "title": "OTS — Business Operating Systems for Dutch service businesses",
     "description": "We build Business Operating Systems for restaurants, clinics, and professional services firms in the Netherlands. Less manual work. Better data. Systems that do their work quietly."
   },
+  "metadata": {
+    "homepage": {
+      "title": "Ontwikkeling Tech Services — Business operating systems for service businesses",
+      "description": "OTS builds operating systems that remove manual work from service businesses. An Audit, a Build, a Retainer. No hourly work. No standalone automations."
+    },
+    "services": {
+      "title": "Services — Audit, Build, Retainer | OTS",
+      "description": "Three services. One progression. A two-week Audit (€2,500), a fixed-price Build, and a monthly Retainer. See what each costs and what you get."
+    },
+    "essaysIndex": {
+      "title": "Essays on systems and service businesses | OTS",
+      "description": "Thinking about systems, business processes, and why standalone tools rarely solve real problems. Written for owners of service businesses."
+    },
+    "contact": {
+      "title": "Contact — Request a Discovery call | OTS",
+      "description": "A 45-minute Discovery call. No slide deck, no sales pitch. We ask questions; you tell us what you need."
+    },
+    "notFound": {
+      "title": "Page not found | OTS",
+      "description": "This page doesn't exist. Go back to the homepage or see our services."
+    }
+  },
   "home": {
     "eyebrow": "Step 4a — Internationalisation",
     "tagline_part1": "Behind every smooth business is a",
