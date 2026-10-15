@@ -1,29 +1,25 @@
 @import "tailwindcss";
 
 @theme {
-  /* Colour tokens — from OTS Brand Bible v2 §4.1 */
+  /* Colour tokens — Brandbook v0.2 §4.1–4.2 */
 
-  /* Backgrounds */
+  /* Primary */
   --color-cream: #FAF6EE;
-  --color-cream-deep: #F2EBDA;
-  --color-night: #0E0B08;
-  --color-night-soft: #1A1612;
-
-  /* Text */
   --color-ink: #141210;
+  --color-accent: #E85A1C;
+
+  /* Extended */
+  --color-cream-deep: #F2EBDA;
   --color-ink-soft: #2C2822;
   --color-muted: #8A7F6E;
-
-  /* Accent — the single accent colour of the brand */
-  --color-accent: #E85A1C;
   --color-accent-deep: #B8420E;
   --color-accent-tint: #FBE6D8;
+  --color-night: #0E0B08;
 
-  /* Rare tertiary — the mist sage */
+  /* Expanded — brandbook HTML tokens not in PRD §A2.1 (9-token table) */
+  --color-night-soft: #1A1612;
   --color-mist: #DDE6DA;
-
-  /* Rule — for borders and dividers */
-  --color-rule: rgb(20 18 16 / 0.14);
+  --color-rule: rgb(20 18 16 / 0.10);
 
   /* Border radius — from Brand Bible v2 §4.4 */
   --radius-chip: 4px;

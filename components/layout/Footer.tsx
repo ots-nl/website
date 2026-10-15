@@ -17,8 +17,6 @@ const footerLinkClasses = [
  * Footer — the site-wide footer.
  *
  * Rendered once in the locale layout so it appears on every page.
- * Background is the literal --night-adjacent #0A0806 from the Brand Bible
- * footer spec, deliberately darker than the --night section colour.
  */
 export function Footer() {
   const t = useTranslations('footer');
@@ -37,7 +35,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0A0806] pt-24 pb-12">
+    <footer className="bg-night pt-24 pb-12">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Column 1 — Brand */}

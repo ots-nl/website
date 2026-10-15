@@ -13,10 +13,10 @@ interface SectionProps extends HTMLAttributes<HTMLElement> {
  * Each background pairs with the correct default text colour.
  *
  * From Brand Bible v2 §4.1:
- * - cream (#FAF6EE) is the canvas — default background, ink text
- * - cream-deep (#F2EBDA) is the secondary — for alternating rhythm
- * - night (#0E0B08) is the dark section — used sparingly, 2-3 max per page
- * - mist (#DDE6DA) is the sage — used once per page maximum (currently reserved for Contact)
+ * - cream (--color-cream) is the canvas — default background, ink text
+ * - cream-deep (--color-cream-deep) is the secondary — for alternating rhythm
+ * - night (--color-night) is the dark section — used sparingly, 2-3 max per page
+ * - mist (--color-mist) is the sage — used once per page maximum (currently reserved for Contact)
  */
 const backgroundClasses: Record<SectionBackground, string> = {
   'cream': 'bg-cream text-ink',
